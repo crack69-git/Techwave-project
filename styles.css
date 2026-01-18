@@ -6,3 +6,27 @@
   font-weight: 400;
   font-style: normal;
 }
+.nav-container{}
+.btn{}
+.btn-alter{
+    display: none;
+}
+
+.hero{
+    background-image: url('assets/hero-bg.png');
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width: 576px) {
+  .nav-container {
+    display: none;
+  }
+  .btn{
+    display:none;
+  }
+  .btn-alter{
+    display: block;
+  }
+}

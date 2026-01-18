@@ -10,19 +10,93 @@
 </head>
 <body class="inter">
     <header>
-        <nav class="flex justify-between pl-50 pr-50 pt-4 pb-4 bg-[#412567] items-center">
+        <nav class="mx-[576px]:pl-3 mx-[576px]:pr-3 flex justify-between pl-12 pr-12 pt-4 pb-4 bg-[#412567] items-center border-b border-b-white/40">
             <h1 class="text-[2rem] font-extrabold text-white">Tech
                 <span class="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 bg-clip-text text-transparent drop-shadow-lg">Wave</span></h1>
-            <div class="text-white gap-8 flex leading-13 font-medium">
+            <div class="text-white gap-8 flex leading-13 font-medium nav-container">
                 <a class="" href="#">About</a>
                 <a href="#">Episodes</a>
                 <a href="#">Host</a>
             </div>
-            <button class="border-none pt-3 pb-3 pr-4 pl-4 text-white rounded-[10000px] font-semibold bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+            <button class="btn border-none pt-3 pb-3 pr-4 pl-4 text-white rounded-[10000px] font-semibold bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
                 Subscribe
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
+            <a class="btn-alter" href="#"><img src="assets/hamburger-menu.png" alt="Menu"></a>
         </nav>
     </header>
+    <main>
+        <section class="text-center bg-[#1A0B2E] text-white pb-30">
+            <div class="pt-12.5 pl-100 pr-100">
+                <h1 class="text-[48px] font-bold mb-4">About the Podcast</h1>
+                <p class="leading-5 opacity-80">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+                    We break down complex topics into digestible insights, explore productivity strategies that actually work,
+                    and share stories of personal growth from industry leaders.
+                </p>
+                <br>
+                <p class="mb-20 leading-5 text-[1rem] opacity-80">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            </div>
+            <div class="mb-20 ml-50 mr-50 opacity-20">
+                <hr>
+            </div>
+            <div class="flex justify-between pl-50 pr-50">
+                <div>
+                    <h2 class="text-[#00FF88] text-[48px] font-black mb-4">150K+</h2>
+                    <p class="leading-5">Monthly Listeners</p>
+                </div>
+                <div>
+                    <h2 class="text-[#00FF88] text-[48px] font-black mb-4">200+</h2>
+                    <p class="leading-5">episodes published</p>
+                </div>
+                <div>
+                    <h2 class="text-[#00FF88] text-[48px] font-black mb-4">4.9★</h2>
+                    <p class="leading-5">Average Rating</p>
+                </div>
+                <div>
+                    <h2 class="text-[#00FF88] text-[48px] font-black mb-4">50+</h2>
+                    <p class="leading-5">Industry Experts</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#230E3D] text-white pt-30 pb-30 pl-50 pr-50">
+            <h1 class=" text-center text-5xl font-bold mb-10">Why Choose TechWave</h1>
+            <div class="grid grid-cols-3 grid-rows-auto gap-7.5 align-middle">
+                <div class="bg-[#351165] pt-[108px] pl-10 pr-10 pb-27 rounded-[40px] row-span-2">
+                    <img class="mb-4" src="assets/headphone.png" alt="headphone">
+                    <h1 class="text-2xl font-bold mb-4">Premium Audio Quality</h1>
+                    <p class="leading-6 opacity-60">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                </div>
+                <div class="bg-[#351165] pt-10 pl-10 pr-10 pb-10 rounded-[40px] col-span-2">
+                    <img class="mb-4" src="assets/device.png" alt="device">
+                    <h1 class="text-2xl font-bold mb-4">Mobile Friendly</h1>
+                    <p class="leading-6 opacity-60">Listen on the go with seamless mobile experience and offline downloads.</p>
+                </div>
+                <div class="bg-[#351165] pt-10 pl-10 pr-10 pb-10 rounded-[40px] col-span-2">
+                    <img class="mb-4" src="assets/location.png" alt="location">
+                    <h1 class="text-2xl font-bold mb-4">Global Community</h1>
+                    <p class="leading-6 opacity-60">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                </div>
+                <div class="bg-[#351165] pt-10 pl-10 pr-10 pb-10 rounded-[40px] col-span-2">
+                    <img class="mb-4" src="assets/zap-fast.png" alt="zap-fast">
+                    <h1 class="text-2xl font-bold mb-4">Exclusive Interviews</h1>
+                    <p class="leading-6 opacity-60">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+                </div>
+                <div class="bg-[#351165] pt-10 pl-10 pr-10 pb-10 rounded-[40px] col-span-1">
+                    <img class="mb-4" src="assets/resource.png" alt="resource">
+                    <h1 class="text-2xl font-bold mb-4">Rich Resources</h1>
+                    <p class="leading-6 opacity-60">Access show notes, transcripts, and additional learning materials for every episode.</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#1A0B2E] text-white pl-50 pr-50">
+            <div class="pt-30 text-center">
+                <h1 class="text-5xl font-bold">Featured Episodes</h1>
+            </div>
+            <div class="pb-12 grid grid-cols-3 gap-7.5 aspect-video w-full">
+                <iframe class="aspect-video w-full rounded-xl" src="https://www.youtube.com/embed/2f5NHArhhQ0" width="100%" height="440px" allow="accelerometer; autoplay; picture-in-picture" allowfullscreen> </iframe class="aspect-video w-full rounded-xl">
+                <iframe class="aspect-video w-full rounded-xl" src="https://www.youtube.com/embed/2f5NHArhhQ0" width="100%" height="440px" allow="accelerometer; autoplay; picture-in-picture" allowfullscreen> </iframe>
+                <iframe class="aspect-video w-full rounded-xl" src="https://www.youtube.com/embed/2f5NHArhhQ0" width="100%" height="440px" allow="accelerometer; autoplay; picture-in-picture" allowfullscreen> </iframe>            </div>
+        </section>
+    </main>
 </body>
 </html>
