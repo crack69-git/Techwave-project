@@ -9,7 +9,14 @@
 .hero-span{
 
 }
-.nav-container{}
+.nav-container a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    background: linear-gradient(to top right, #facc15, #ec4899, #a21caf);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
 .btn{}
 .btn-alter{
     display: none;
@@ -21,7 +28,35 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.new{
+@keyframes movebanner {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.zoomer{
+  animation: movebanner 1s infinite ease-in-out;
+}
+@keyframes rotatemic {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+.mic-rot{
+    transform-origin: bottom;
+  animation: rotatemic 1s infinite ease-in-out;
+  cursor: pointer;
 }
 @media (max-width: 576px) {
   .nav-container {
@@ -38,7 +73,45 @@
     height: 220px;
   }
   .mic{
+    width: 180px;
+    height: 180px;
+  }
+  .mic-rot{
     width: 80px;
-    height: auto;
+    height: 100px;
+  }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  .about{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .about-hr{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .status{
+    padding-left: 50px;
+    padding-right: 50px;
+     
+  }
+  .choose{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .featured{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .host-info{
+    flex-direction: column;
+  }
+  .host-img{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .host-dep{
+    justify-content: center;
   }
 }
