@@ -70,10 +70,10 @@
                 </div>
             </div>
         </section>
-        <section class="bg-[#230E3D] text-white pt-30 pb-30 pl-50 pr-50">
-            <h1 class=" text-center text-5xl font-bold mb-10">Why Choose TechWave</h1>
-            <div class="grid grid-cols-3 grid-rows-auto gap-7.5 align-middle">
-                <div class="bg-[#351165] pt-[108px] pl-10 pr-10 pb-27 rounded-[40px] row-span-2">
+        <section class="max-[576px]:pl-5 max-[576px]:pr-5 bg-[#230E3D] text-white pt-30 pb-30 pl-50 pr-50">
+            <h1 class="max-[576px]:text-3xl text-center text-5xl font-bold mb-10">Why Choose TechWave</h1>
+            <div class="max-[576px]:grid-cols-1 max-[576px]:gap-4 grid grid-cols-3 grid-rows-auto gap-7.5 align-middle">
+                <div class="max-[576px]:w-full bg-[#351165] pt-[108px] pl-10 pr-10 pb-27 rounded-[40px] row-span-2">
                     <img class="mb-4" src="assets/headphone.png" alt="headphone">
                     <h1 class="text-2xl font-bold mb-4">Premium Audio Quality</h1>
                     <p class="leading-6 opacity-60">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
@@ -100,12 +100,12 @@
                 </div>
             </div>
         </section>
-        <section class="bg-[#1A0B2E] text-white pl-50 pr-50">
+        <section class="max-[576px]:pl-5 max-[576px]:pr-5 bg-[#1A0B2E] text-white pl-50 pr-50">
             <div class="pb-30">
-                <div class="pt-30 text-center">
+                <div class="max-[576px]:pt-10 pt-30 text-center">
                     <h1 class="text-5xl font-bold mb-10">Featured Episodes</h1>
                 </div>
-                <div class="pb-12 grid grid-cols-3 gap-7.5">
+                <div class="max-[576px]:grid-cols-1 max-[576px]:gap-4 pb-12 grid grid-cols-3 gap-7.5">
                     <div class="bg-[#250D44] rounded-3xl">                
                         <iframe class="aspect-video w-full h-42 mb-6 rounded-t-3xl" src="https://www.youtube.com/embed/2f5NHArhhQ0" width="100%" height="440px" allow="accelerometer; autoplay; picture-in-picture" allowfullscreen> </iframe>            
                         <div class="pl-6 pr-6">
@@ -131,16 +131,16 @@
                         </div>        
                     </div>
                 </div>
-                <div class="mt-30">
-                    <h1 class="text-5xl font-bold text-center mb-10">Meet the Host</h1>
-                    <div class="flex justify-evenly items-center p-10 bg-[#533C72]/20 rounded-[40px]">
+                <div class="max-[576px]:mt-15 mt-30 text-center">
+                    <h1 class="max-[576px]:text-[32px] text-5xl font-bold text-center mb-10">Meet the Host</h1>
+                    <div class="max-[576px]:flex-col flex justify-evenly items-center max-[576px]:p-6 p-10 bg-[#533C72]/20 rounded-[40px]">
                         <div class="w-1/2 mr-6">
-                            <img class="w-full" src="assets/host.png" alt="">
+                            <img class="w-full max-[576px]:mb-6" src="assets/host.png" alt="">
                         </div>
                         <div>
-                            <h4 class="text-[2rem] font-bold mb-4">Alex Kumar</h4>
-                            <p class="leading-6 mb-4">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
-                            <div class="flex gap-2">
+                            <h4 class="max-[576px]:text-2xl text-[2rem] font-bold mb-4">Alex Kumar</h4>
+                            <p class="leading-6 mb-4 opacity-80">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+                            <div class="flex gap-2 justify-center">
                                 <div class="border-2 border-[#533C72] p-3 rounded-full">
                                     <img src="assets/linkedin.png" alt="">
                                 </div>
@@ -161,9 +161,12 @@
         </section>
     </main>
     <footer>
-        <div class="text-center pt-30 pb-30 text-white bg-cover" style="background-image: url('assets/footer-bg.png');">
-            <h1 class="text-6xl font-bold mb-8">Tech<span class="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 bg-clip-text text-transparent drop-shadow-lg">Wave</span></h1>
-            <div class="flex justify-center gap-10">
+        <div 
+            class="text-center pt-25 pb-20 text-white bg-center bg-cover max-[576px]:pt-5 max-[576px]:pb-5 max-[576px]:pl-5 max-[576px]:pr-5 max-[576px]:bg-center max-[576px]:bg-cover"
+            style="background-image: url('assets/footer-bg.png');height: 200px"
+        >
+            <h1 class="max-[576px]:text-3xl max-[576px]:mb-4 text-6xl font-bold mb-8">Tech<span class="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 bg-clip-text text-transparent drop-shadow-lg">Wave</span></h1>
+            <div class="max-[576px]:flex-wrap max-[576px]:gap-7 flex justify-center gap-10">
                 <div class="flex">
                     <img class="mr-3" src="assets/spotify.png" alt="Spotify">
                     <p class="opacity-60">Spotify</p>
@@ -181,6 +184,7 @@
                     <p class="opacity-60">Twitter</p>
                 </div>
             </div>
+            <p class="mt-4 opacity-60">© 2026 TechWave Podcast. All rights reserved.</p>
         </div>
     </footer>
 </body>
