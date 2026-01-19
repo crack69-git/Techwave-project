@@ -82,6 +82,11 @@
   }
 }
 @media (min-width: 577px) and (max-width: 992px) {
+  .new-btn{
+    position:static;
+    left: 23%;
+    top: 0%;
+  }
   .about{
     padding-left: 50px;
     padding-right: 50px;
